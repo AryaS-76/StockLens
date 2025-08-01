@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <link rel="stylesheet" href="./styles3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap" />
+</head>
+<body>
+
+  <div class="macbook-pro-14-14">
+    <!-- UI Shapes -->
+    <div class="frame-parent">
+      <!-- Decorative stars (keep) -->
+      <div class="star-parent"><img class="frame-child" alt="" src="images/Frame 4.png"></div>
+      <div class="star-group"><img class="frame-child" alt="" src="images/Frame 4.png"></div>
+      <div class="star-container"><img class="frame-child" alt="" src="images/Frame 4.png"></div>
+      <div class="frame-div"><img class="frame-child" alt="" src="images/Frame 4.png"></div>
+      <div class="star-parent1"><img class="frame-child" alt="" src="images/Frame 4.png"></div>
+      <div class="star-parent2"><img class="frame-child" alt="" src="images/Frame 4.png"></div>
+      <div class="star-parent3"><img class="frame-child" alt="" src="images/Frame 4.png"></div>
+      <div class="star-parent4"><img class="frame-child" alt="" src="images/Frame 4.png"></div>
+      <div class="star-parent5"><img class="frame-child" alt="" src="images/Frame 4.png"></div>
+      <div class="star-parent6"><img class="frame-child" alt="" src="images/Frame 4.png"></div>
+      <div class="star-parent7"><img class="frame-child" alt="" src="images/Frame 4.png"></div>
+    </div>
+
+    <div class="star-parent8"><img class="frame-child" alt="" src="Star 4.svg"></div>
+    <img class="macbook-pro-14-14-child" alt="" src="images/Frame 61.png">
+
+    <div class="what-is-your">What is your annual income?</div>
+
+    <!-- ✅ Form -->
+    <form id="incomeForm" action="question4.html" method="get">
+      <div class="macbook-pro-14-14-inner">
+        <div class="frame-group">
+
+          <label class="chatgpt-image-apr-10-2025-03-wrapper">
+            <input type="radio" name="income" value="lt-5L" data-score="2" hidden />
+            <img class="chatgpt-image-apr-10-2025-03" src="images/5l.png" alt="Less than 5L">
+          </label>
+
+          <label class="chatgpt-image-apr-10-2025-03-container">
+            <input type="radio" name="income" value="5-10L" data-score="6" hidden />
+            <img class="chatgpt-image-apr-10-2025-031" src="images/10l.png" alt="5–10L">
+          </label>
+
+          <label class="chatgpt-image-apr-10-2025-03-container">
+            <input type="radio" name="income" value="gt-10L" data-score="10" hidden />
+            <img class="chatgpt-image-apr-10-2025-031" src="images/20l.png" alt="10L+">
+          </label>
+
+        </div>
+      </div>
+
+      <!-- ✅ Next Button -->
+      <button type="submit" id="nextBtn" class="next-parent" disabled>
+        <div class="next">Next</div>
+        <img class="group-icon" alt="" src="images/Frame 62.png">
+      </button>
+    </form>
+
+    <img class="material-symbolsinfo-outline-icon" alt="" src="material-symbols:info-outline-rounded.svg">
+    <div class="we-only-use">We only use this to score your risk profile. It won’t be shared.</div>
+
+    <!-- Progress UI -->
+    <div class="rectangle-div"></div>
+    <div class="macbook-pro-14-14-child1"></div>
+    <div class="macbook-pro-14-14-child2"></div>
+    <div class="macbook-pro-14-14-child3"></div>
+    <div class="macbook-pro-14-14-child4"></div>
+    <div class="macbook-pro-14-14-child5"></div>
+    <div class="macbook-pro-14-14-child6"></div>
+  </div>
+
+  <!-- ✅ Script to Save Score -->
+  <script>
+    const radioButtons = document.querySelectorAll('input[name="income"]');
+    const nextButton = document.getElementById('nextBtn');
+
+    radioButtons.forEach(radio => {
+      radio.addEventListener('change', () => {
+        nextButton.disabled = false;
+
+        document.querySelectorAll('.chatgpt-image-apr-10-2025-03, .chatgpt-image-apr-10-2025-031').forEach(img => {
+          img.style.border = 'none';
+        });
+
+        const selectedImg = radio.nextElementSibling;
+        if (selectedImg && selectedImg.tagName === "IMG") {
+          selectedImg.style.border = '3px solid #0367fd';
+          selectedImg.style.borderRadius = '12px';
+          localStorage.setItem('income', radio.value);               // value
+          localStorage.setItem('score_income', radio.dataset.score); // score
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <link rel="stylesheet" href="./styles6.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap" />
+</head>
+<body>
+
+  <div class="macbook-pro-14-18">
+    <img class="macbook-pro-14-18-child" alt="" src="images/Screenshot 2025-04-19 191243.png">
+    <img class="macbook-pro-14-18-item" alt="" src="images/Frame 61.png">
+    
+    <div class="what-is-your">What is your primary investment goal?</div>
+
+    <!-- ✅ FORM -->
+    <form id="goalForm" action="question7.html" method="get">
+      <div class="frame-div">
+        <div class="frame-parent">
+
+          <label class="chatgpt-image-apr-10-2025-03-wrapper">
+            <input type="radio" name="goal" value="wealth-creation" data-score="10" hidden />
+            <img class="chatgpt-image-apr-10-2025-03" alt="Wealth Creation" src="images/wealth.jpg" />
+          </label>
+
+          <label class="chatgpt-image-apr-10-2025-03-wrapper">
+            <input type="radio" name="goal" value="retirement-planning" data-score="7" hidden />
+            <img class="chatgpt-image-apr-10-2025-03" alt="Retirement Planning" src="images/retirement.jpg" />
+          </label>
+
+          <label class="chatgpt-image-apr-10-2025-03-frame">
+            <input type="radio" name="goal" value="education-marriage" data-score="4" hidden />
+            <img class="chatgpt-image-apr-10-2025-032" alt="Education/Marriage" src="images/edication.jpg" />
+          </label>
+
+          <label class="chatgpt-image-apr-10-2025-03-wrapper">
+            <input type="radio" name="goal" value="capital-preservation" data-score="1" hidden />
+            <img class="chatgpt-image-apr-10-2025-033" alt="Capital Preservation" src="images/capital.jpg" />
+          </label>
+
+        </div>
+      </div>
+
+      <!-- ✅ NEXT BUTTON -->
+      <button type="submit" id="nextBtn" class="next-parent" disabled>
+        <div class="next">Next</div>
+        <img class="frame-child" alt="" src="images/Frame 62.png">
+      </button>
+    </form>
+
+    <!-- Progress and Styling Elements -->
+    <div class="rectangle-div"></div>
+    <div class="macbook-pro-14-18-child1"></div>
+    <div class="macbook-pro-14-18-child2"></div>
+    <div class="macbook-pro-14-18-child3"></div>
+    <div class="macbook-pro-14-18-child4"></div>
+    <div class="macbook-pro-14-18-child5"></div>
+    <div class="macbook-pro-14-18-child6"></div>
+  </div>
+
+  <!-- ✅ SCRIPT -->
+  <script>
+    const radios = document.querySelectorAll('input[name="goal"]');
+    const nextBtn = document.getElementById('nextBtn');
+
+    radios.forEach(radio => {
+      radio.addEventListener('change', () => {
+        nextBtn.disabled = false;
+
+        // Remove all highlights
+        document.querySelectorAll('.chatgpt-image-apr-10-2025-03, .chatgpt-image-apr-10-2025-032, .chatgpt-image-apr-10-2025-033')
+          .forEach(img => {
+            img.style.border = 'none';
+          });
+
+        // Highlight selected image
+        const selectedImg = radio.nextElementSibling;
+        if (selectedImg) {
+          selectedImg.style.border = '3px solid #0367fd';
+          selectedImg.style.borderRadius = '12px';
+        }
+
+        // Save value and score
+        localStorage.setItem('goal', radio.value);
+        localStorage.setItem('score_goal', radio.dataset.score);
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <link rel="stylesheet" href="./styles5.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap" />
+</head>
+<body>
+
+  <div class="macbook-pro-14-15">
+    <div class="frame-parent">
+      <div class="frame-wrapper">
+        <div class="star-parent"></div>
+      </div>
+      <img class="frame-item" alt="" src="images/Frame 8.png">
+    </div>
+
+    <img class="macbook-pro-14-15-child" alt="" src="images/Frame 61.png">
+    <div class="are-you-okay">Are you okay with ups and downs in the market?</div>
+
+    <!-- ✅ Form Starts -->
+    <form id="volatilityForm" action="question6.html" method="get">
+      <div class="macbook-pro-14-15-inner">
+        <div class="frame-group">
+
+          <label class="group-parent">
+            <input type="radio" name="volatility" value="very-comfortable" data-score="10" hidden />
+            <img class="frame-child1" alt="Very Comfortable" src="images/comformtable.jpg">
+            <div class="very-comfortable">Very Comfortable</div>
+          </label>
+
+          <label class="group-container">
+            <input type="radio" name="volatility" value="somewhat-comfortable" data-score="5" hidden />
+            <img class="frame-child1" alt="Somewhat Comfortable" src="images/somewhatconfortable .jpg">
+            <div class="very-comfortable">Somewhat comfortable</div>
+            <img class="line-icon" alt="" src="Line 3.svg">
+          </label>
+
+          <label class="group-parent">
+            <input type="radio" name="volatility" value="not-comfortable" data-score="1" hidden />
+            <img class="frame-child1" alt="Not Comfortable" src="images/notcomfortable.jpg">
+            <div class="very-comfortable">Not comfortable</div>
+          </label>
+
+        </div>
+      </div>
+
+      <!-- ✅ Next Button -->
+      <button type="submit" id="nextBtn" class="next-parent" disabled>
+        <div class="next">Next</div>
+        <img class="group-icon" alt="" src="images/Frame 62.png">
+      </button>
+    </form>
+
+    <!-- Decorations -->
+    <div class="rectangle-div"></div>
+    <div class="macbook-pro-14-15-child1"></div>
+    <div class="macbook-pro-14-15-child2"></div>
+    <div class="macbook-pro-14-15-child3"></div>
+    <div class="macbook-pro-14-15-child4"></div>
+    <div class="macbook-pro-14-15-child5"></div>
+    <div class="macbook-pro-14-15-child6"></div>
+  </div>
+
+  <!-- ✅ Script -->
+  <script>
+    const radios = document.querySelectorAll('input[name="volatility"]');
+    const nextBtn = document.getElementById('nextBtn');
+
+    radios.forEach(radio => {
+      radio.addEventListener('change', () => {
+        nextBtn.disabled = false;
+
+        // Unhighlight all
+        document.querySelectorAll('.frame-child1').forEach(img => {
+          img.style.border = 'none';
+        });
+
+        // Highlight selected image
+        const selectedImg = radio.nextElementSibling;
+        if (selectedImg) {
+          selectedImg.style.border = '3px solid #0367fd';
+          selectedImg.style.borderRadius = '12px';
+        }
+
+        // Save value + score
+        localStorage.setItem('volatility', radio.value);
+        localStorage.setItem('score_volatility', radio.dataset.score);
+      });
+    });
+  </script>
+
+</body>
+</html>

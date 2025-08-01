@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <link rel="stylesheet" href="./styles2.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400&display=swap" />
+</head>
+<body>
+  <div class="macbook-pro-14-13">
+    <div class="macbook-pro-14-13-inner">
+      <div class="frame-parent">
+        <!-- Decorative shapes -->
+        <div class="star-parent"><img class="frame-child" alt="" src="images/Frame 9.png"></div>
+        <div class="star-group"><img class="frame-child" alt="" src="images/Frame 9.png"></div>
+        <div class="star-group"><img class="frame-child" alt="" src="images/Frame 9.png"></div>
+        <div class="star-group"><img class="frame-child" alt="" src="images/Frame 9.png"></div>
+      </div>
+    </div>
+
+    <img class="macbook-pro-14-13-child" alt="" src="images/Frame 61.png">
+    <div class="how-long-do">How long do you plan to invest for?</div>
+
+    <!-- FORM STARTS -->
+    <form id="horizonForm" action="question3.html" method="get">
+      <div class="macbook-pro-14-13-inner1">
+        <div class="frame-group">
+          <label class="chatgpt-image-apr-10-2025-03-wrapper">
+            <input type="radio" name="horizon" value="lt-2" data-score="2" hidden />
+            <img class="chatgpt-image-apr-10-2025-03" src="images/ChatGPT Image Apr 10, 2025, 03_06_11 PM 1-3.png" alt="Less than 2 years">
+          </label>
+
+          <label class="chatgpt-image-apr-10-2025-03-wrapper">
+            <input type="radio" name="horizon" value="2-5" data-score="5" hidden />
+            <img class="chatgpt-image-apr-10-2025-031" src="images/ChatGPT Image Apr 10, 2025, 03_06_11 PM 1-2.png" alt="2–5 years">
+          </label>
+
+          <label class="chatgpt-image-apr-10-2025-03-frame">
+            <input type="radio" name="horizon" value="5-10" data-score="8" hidden />
+            <img class="chatgpt-image-apr-10-2025-032" src="images/ChatGPT Image Apr 10, 2025, 03_06_11 PM 1-1.png" alt="5–10 years">
+          </label>
+
+          <label class="chatgpt-image-apr-10-2025-03-wrapper">
+            <input type="radio" name="horizon" value="gt-10" data-score="10" hidden />
+            <img class="chatgpt-image-apr-10-2025-03" src="images/ChatGPT Image Apr 10, 2025, 03_06_11 PM 1.png" alt="More than 10 years">
+          </label>
+        </div>
+      </div>
+
+      <button type="submit" id="nextBtn" class="next-parent" disabled>
+        <div class="next">Next</div>
+        <img class="group-icon" alt="" src="images/Frame 62.png">
+      </button>
+    </form>
+
+    <img class="macbook-pro-14-13-item" alt="" src="images/Frame 13.png">
+    <div class="rectangle-div"></div>
+    <div class="macbook-pro-14-13-child1"></div>
+    <div class="macbook-pro-14-13-child2"></div>
+    <div class="macbook-pro-14-13-child3"></div>
+    <div class="macbook-pro-14-13-child4"></div>
+    <div class="macbook-pro-14-13-child5"></div>
+    <div class="macbook-pro-14-13-child6"></div>
+  </div>
+
+  <!-- ✅ JavaScript -->
+  <script>
+    const radioButtons = document.querySelectorAll('input[name="horizon"]');
+    const nextButton = document.getElementById('nextBtn');
+
+    radioButtons.forEach(radio => {
+      radio.addEventListener('change', () => {
+        nextButton.disabled = false;
+
+        // Remove highlight from all images
+        document.querySelectorAll('.chatgpt-image-apr-10-2025-03, .chatgpt-image-apr-10-2025-031, .chatgpt-image-apr-10-2025-032').forEach(img => {
+          img.style.border = "none";
+        });
+
+        // Highlight selected image
+        const selectedImg = radio.nextElementSibling;
+        if (selectedImg && selectedImg.tagName === "IMG") {
+          selectedImg.style.border = "3px solid #0367fd";
+          selectedImg.style.borderRadius = "12px";
+
+          localStorage.setItem('horizon', radio.value); // value
+          localStorage.setItem('score_horizon', radio.dataset.score); // score
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

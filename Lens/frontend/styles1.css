@@ -1,0 +1,228 @@
+.frame-child {
+    position: absolute;
+    top: 498px;
+    left: 189px;
+    width: 577.8px;
+    height: 577.8px;
+    object-fit: contain;
+}
+.frame-item {
+    position: absolute;
+    top: -183px;
+    left: -163px;
+    width: 577.8px;
+    height: 577.8px;
+    object-fit: contain;
+}
+.frame-parent {
+    position: absolute;
+    top: calc(50% - 457px);
+    left: 884px;
+    border-radius: 4px;
+    background-color: #0367fd;
+    width: 597px;
+    height: 913px;
+    overflow: hidden;
+}
+.macbook-pro-14-2-child {
+    position: absolute;
+    top: 49px;
+    left: 30px;
+    width: 159.2px;
+    height: 33.3px;
+}
+.how-old-are {
+    position: absolute;
+    top: 181px;
+    left: 54px;
+    display: inline-block;
+    width: 650px;
+}
+.next {
+    position: relative;
+}
+.frame-inner {
+    width: 40px;
+    position: relative;
+    height: 40px;
+}
+.next-parent {
+    position: absolute;
+    top: 699px;
+    left: 398px;
+    box-shadow: 0px 3px 18.1px rgba(0, 0, 0, 0.1);
+    border-radius: 120px;
+    background-color: #fff;
+    height: 73px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 24px;
+    box-sizing: border-box;
+    gap: 9px;
+    font-size: 20.18px;
+    color: #0367fd;
+}
+.macbook-pro-14-2-item {
+    position: absolute;
+    top: 699px;
+    left: 306px;
+    border-radius: 120px;
+    width: 88px;
+    height: 73px;
+}
+.chatgpt-image-apr-10-2025-03 {
+    position: absolute;
+    top: 9px;
+    left: 33px;
+    width: 84px;
+    height: 201px;
+    object-fit: cover;
+}
+.chatgpt-image-apr-10-2025-03-wrapper {
+    width: 157px;
+    position: relative;
+    border-radius: 6px;
+    background-color: #fff;
+    height: 230px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.chatgpt-image-apr-10-2025-03-container {
+    width: 157px;
+    position: relative;
+    border-radius: 6px;
+    background-color: #fff;
+    box-sizing: border-box;
+    height: 230px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.chatgpt-image-apr-10-2025-032 {
+    position: absolute;
+    top: 9px;
+    left: 33px;
+    width: 84px;
+    height: 198px;
+    object-fit: cover;
+}
+.chatgpt-image-apr-10-2025-033 {
+    position: absolute;
+    top: 9px;
+    left: 33px;
+    width: 84px;
+    height: 196px;
+    object-fit: cover;
+}
+.frame-group {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18px;
+}
+.macbook-pro-14-2-inner {
+    position: absolute;
+    top: 308px;
+    left: 57px;
+    background-color: #f2f2f2;
+    width: 804px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px 61px;
+    box-sizing: border-box;
+}
+.rectangle-div {
+    position: absolute;
+    top: 105px;
+    left: 36px;
+    background-color: #3dcc86;
+    width: 79px;
+    height: 11px;
+}
+.macbook-pro-14-2-child1 {
+    position: absolute;
+    top: 105px;
+    left: 124px;
+    background-color: #efefef;
+    width: 79px;
+    height: 11px;
+}
+.macbook-pro-14-2-child2 {
+    position: absolute;
+    top: 105px;
+    left: 212px;
+    background-color: #efefef;
+    width: 79px;
+    height: 11px;
+}
+.macbook-pro-14-2-child3 {
+    position: absolute;
+    top: 105px;
+    left: 300px;
+    background-color: #efefef;
+    width: 79px;
+    height: 11px;
+}
+.macbook-pro-14-2-child4 {
+    position: absolute;
+    top: 105px;
+    left: 388px;
+    background-color: #efefef;
+    width: 79px;
+    height: 11px;
+}
+.macbook-pro-14-2-child5 {
+    position: absolute;
+    top: 105px;
+    left: 476px;
+    background-color: #efefef;
+    width: 79px;
+    height: 11px;
+}
+.macbook-pro-14-2-child6 {
+    position: absolute;
+    top: 105px;
+    left: 564px;
+    background-color: #efefef;
+    width: 79px;
+    height: 11px;
+}
+.macbook-pro-14-2 {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    height: 982px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 49.2px;
+    color: #0b0b0b;
+    font-family: 'Lexend Deca';
+}
+
+
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label img {
+  border: 3px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+input[type="radio"]:checked + img {
+  border-color: #007bff;
+  background-color: #e0f0ff;
+}

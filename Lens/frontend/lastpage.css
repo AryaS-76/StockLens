@@ -1,0 +1,487 @@
+.frame-child {
+    width: 78px;
+    position: relative;
+    border-radius: 70px;
+    height: 78px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+.hdfc-bank {
+    align-self: stretch;
+    position: relative;
+}
+.medium {
+    position: relative;
+    font-weight: 300;
+}
+.medium-wrapper {
+    border-radius: 20px;
+    background-color: #ebdcff;
+    border: 1px solid #dec5fe;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+}
+.frame-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 14px;
+    font-size: 14px;
+}
+.hdfc-bank-parent {
+    width: 167px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 14px;
+}
+.div {
+    position: relative;
+}
+.wrapper {
+    border-radius: 3px;
+    background-color: #effff7;
+    border: 1px solid #5bd096;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+    font-size: 15px;
+    color: #3dcc86;
+}
+.frame-group {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 44px;
+}
+.frame-wrapper {
+    align-self: stretch;
+    border-radius: 50px;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.medium-container {
+    border-radius: 20px;
+    background-color: #ffdcdc;
+    border: 1px solid #fec5c6;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+}
+.container {
+    border-radius: 3px;
+    background-color: #ffefef;
+    border: 1px solid #d05b5b;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+    font-size: 15px;
+    color: #cc3d3d;
+}
+.medium-frame {
+    border-radius: 20px;
+    background-color: #dcffdf;
+    border: 1px solid #c5fed0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+}
+.banking-frame {
+    border-radius: 20px;
+    background-color: #dceaff;
+    border: 1px solid #c5d8fe;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+}
+.frame-wrapper1 {
+    align-self: stretch;
+    box-shadow: 0px 1px 14.4px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #6ea8ff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+.instance-parent {
+    position: absolute;
+    top: 226px;
+    left: 47px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.your-list-of {
+    align-self: stretch;
+    position: relative;
+    font-weight: 500;
+}
+.jun-10-2024 {
+    align-self: stretch;
+    position: relative;
+    font-size: 24px;
+    color: #000;
+}
+.your-list-of-stocks-parent {
+    position: absolute;
+    top: 62px;
+    left: 53px;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 36px;
+    color: #0367fd;
+    font-family: Lexend;
+}
+.material-symbolssearch-rounde-icon {
+    width: 24px;
+    position: relative;
+    max-height: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.material-symbolssearch-rounde-parent {
+    position: absolute;
+    top: 164px;
+    left: 341px;
+    border-radius: 20px;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 14px;
+    gap: 10px;
+    font-size: 14px;
+    color: #8b8b8b;
+}
+.rectangle-div {
+    position: absolute;
+    top: 241px;
+    left: 517px;
+    border-radius: 60px;
+    background-color: #d9d9d9;
+    width: 5px;
+    height: 65px;
+}
+.frame-parent {
+    position: absolute;
+    top: 74px;
+    left: 306px;
+    border-radius: 20px;
+    background-color: #eff6ff;
+    width: 543px;
+    height: 900px;
+    overflow-y: auto; /* Use auto instead of scroll */
+    padding: 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px; /* Reduce gap slightly if needed */
+}
+
+.stock-highlight {
+    position: absolute;
+    top: 134px;
+    left: 896px;
+    font-family: Lexend;
+    color: #9c9c9c;
+    display: inline-block;
+    width: 330px;
+}
+.frame-child5 {
+    width: 62px;
+    border-radius: 9px;
+    height: 62px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.stock-highlight2 {
+    align-self: stretch;
+    position: relative;
+    font-size: 16px;
+}
+.stock-highlight-parent {
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+}
+.frame-parent16 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+}
+.group-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    width: 76px;
+    height: 76px;
+}
+.group-item {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    background-color: #b880ff;
+    width: 76px;
+    height: 76px;
+}
+.div8 {
+    position: absolute;
+    top: 25.44px;
+    left: 18.21px;
+}
+.ellipse-parent {
+    width: 76px;
+    position: relative;
+    height: 76px;
+    font-size: 20.1px;
+    color: #000;
+}
+.frame-parent15 {
+    position: absolute;
+    top: 202px;
+    left: 900px;
+    border-radius: 14px;
+    border: 1px solid #9d9d9d;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 43px 20px 28px;
+    gap: 3px;
+    color: #9c9c9c;
+    font-family: Lexend;
+}
+.frame-parent17 {
+    position: absolute;
+    top: 340px;
+    left: 900px;
+    border-radius: 14px;
+    border: 1px solid #9d9d9d;
+    box-sizing: border-box;
+    width: 559px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 43px 20px 28px;
+    gap: 3px;
+    color: #9c9c9c;
+    font-family: Lexend;
+}
+.frame-parent19 {
+    position: absolute;
+    top: 472px;
+    left: 900px;
+    border-radius: 14px;
+    border: 1px solid #9d9d9d;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 43px 20px 28px;
+    gap: 3px;
+    color: #9c9c9c;
+    font-family: Lexend;
+}
+.macbook-pro-14-12-child {
+    position: absolute;
+    top: 645.5px;
+    left: 899.5px;
+    border-top: 1px solid #b9b9b9;
+    box-sizing: border-box;
+    width: 560px;
+    height: 1px;
+}
+.today {
+    position: relative;
+    font-weight: 500;
+}
+.today-parent {
+    position: absolute;
+    top: 616px;
+    left: 900px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 58px;
+    font-size: 14px;
+}
+.macbook-pro-14-12-item {
+    position: absolute;
+    top: 642px;
+    left: 900px;
+    border-radius: 1.5px 1.5px 0px 0px;
+    background-color: #0367fd;
+    width: 42px;
+    height: 3px;
+}
+.macbook-pro-14-12-inner {
+    position: absolute;
+    top: 141px;
+    left: 57px;
+    width: 159.2px;
+    height: 33.3px;
+}
+.tools-wrapper {
+    position: absolute;
+    top: 380px;
+    left: 48px;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    width: 213px;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4px 10px 4px 25px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+.explore-wrapper {
+    position: absolute;
+    top: 310px;
+    left: 50px;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #0367fd;
+    box-sizing: border-box;
+    width: 213px;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4px 10px 4px 25px;
+    font-size: 20px;
+}
+.r-wrapper {
+    width: 64px;
+    border-radius: 90px;
+    background-color: #fff;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.rio-roy {
+    align-self: stretch;
+    position: relative;
+    font-weight: 300;
+}
+.profile {
+    align-self: stretch;
+    position: relative;
+    font-size: 15.56px;
+    font-weight: 300;
+}
+.rio-roy-parent {
+    width: 126px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.frame-parent21 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 11px;
+}
+.macbook-pro-14-12-inner1 {
+    position: absolute;
+    top: 871px;
+    left: 22px;
+    border-radius: 10px;
+    background-color: #eff6ff;
+    width: 268px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 17px;
+    box-sizing: border-box;
+    font-size: 35px;
+}
+.macbook-pro-14-12-child1 {
+    position: absolute;
+    top: 668px;
+    left: 900px;
+    width: 559px;
+    height: 285px;
+    overflow: hidden;
+}
+.macbook-pro-14-12 {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    height: 982px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 24px;
+    color: #000;
+    font-family: 'Lexend Deca';
+}
+
